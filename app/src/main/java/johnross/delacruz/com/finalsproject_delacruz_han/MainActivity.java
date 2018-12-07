@@ -11,11 +11,10 @@ import android.os.Bundle;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
 import android.view.MotionEvent;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawer;
-
-    float x1, y1, x2, y2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +23,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+
+        setTitle("Morning Glory");
 
         drawer = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.nav_view);
@@ -45,12 +46,15 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         switch (menuItem.getItemId()) {
             case R.id.nav_mglory:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MGloryFragment()).commit();
+                setTitle("Morning Glory");
                 break;
             case R.id.nav_cabbage:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CabbageFragment()).commit();
+                setTitle("Cabbage");
                 break;
             case R.id.nav_about:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new AboutFragment()).commit();
+                setTitle("About");
                 break;
         }
 
@@ -67,22 +71,4 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
-    @Override
-    public boolean onTouchEvent(MotionEvent event) {
-        switch (event.getAction()) {
-            case MotionEvent.ACTION_DOWN:
-                x1 = event.getX();
-                y1 = event.getY();
-                break;
-            case MotionEvent.ACTION_UP:
-                x2 = event.getX();
-                y2 = event.getY();
-                if (x1 > x2) {
-                    Intent i = new Intent(MainActivity.this, Act2.class);
-                    startActivity(i);
-                }
-                break;
-        }
-        return false;
-    }
 }
