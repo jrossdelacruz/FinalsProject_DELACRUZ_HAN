@@ -3,16 +3,34 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:showIn="navigation_view">
 
-    <group android:checkableBehavior="single">
-        <item
-            android:id="@+id/nav_mglory"
-            android:title="Morning Glory" />
-        <item
-            android:id="@+id/nav_cabbage"
-            android:title="Cabbage" />
-        <item
-            android:id="@+id/nav_about"
-            android:title="About" />
-    </group>
+    <item android:title="Vegetables">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_cabbage"
+                    android:title="Cabbage" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Fruits">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_blueberries"
+                    android:title="Blueberries" />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Herbs">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_oregano"
+                    android:title="Oregano" />
+            </group>
+        </menu>
+    </item>
 
 </menu>

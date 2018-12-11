@@ -9,7 +9,7 @@
     <item
         android:id="@+id/bnav_steps"
         android:icon="@drawable/ic_steps"
-        android:title="Steps" />
+        android:title="HowTo" />
 
     <item
         android:id="@+id/bnav_tips"
