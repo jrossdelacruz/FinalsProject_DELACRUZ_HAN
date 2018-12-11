@@ -1,7 +1,9 @@
 package johnross.delacruz.com.finalsproject_delacruz_han;
 
 import android.support.annotation.NonNull;
+import android.support.design.widget.BottomNavigationView;
 import android.support.design.widget.NavigationView;
+import android.support.v4.app.Fragment;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -21,6 +23,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setOnNavigationItemSelectedListener(navListener);
+
         setTitle("Cabbage");
 
         drawer = findViewById(R.id.drawer_layout);
@@ -38,8 +43,74 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+    private BottomNavigationView.OnNavigationItemSelectedListener navListener =
+            new BottomNavigationView.OnNavigationItemSelectedListener() {
+                @Override
+                public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                    Fragment selectedFragment = null;
+
+                    if (getTitle() == "Cabbage") {
+                        switch (item.getItemId()) {
+                            case R.id.bnav_info:
+                                selectedFragment = new CabbageFragment();
+                                break;
+                            case R.id.bnav_howto:
+                                selectedFragment = new CabbageHowToFragment();
+                                break;
+                            case R.id.bnav_tips:
+                                selectedFragment = new CabbageTipsFragment();
+                                break;
+                            case R.id.bnav_gallery:
+                                selectedFragment = new CabbageGalleryFragment();
+                                break;
+                        }
+
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                    } else if (getTitle() == "Blueberries") {
+                        switch (item.getItemId()) {
+                            case R.id.bnav_info:
+                                selectedFragment = new BlueberriesFragment();
+                                break;
+                            case R.id.bnav_howto:
+                                selectedFragment = new BlueberriesHowToFragment();
+                                break;
+                            case R.id.bnav_tips:
+                                selectedFragment = new BlueberriesTipsFragment();
+                                break;
+                            case R.id.bnav_gallery:
+                                selectedFragment = new BlueberriesGalleryFragment();
+                                break;
+                        }
+
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                    } else if (getTitle() == "Oregano") {
+                        switch (item.getItemId()) {
+                            case R.id.bnav_info:
+                                selectedFragment = new OreganoFragment();
+                                break;
+                            case R.id.bnav_howto:
+                                selectedFragment = new OreganoHowToFragment();
+                                break;
+                            case R.id.bnav_tips:
+                                selectedFragment = new OreganoTipsFragment();
+                                break;
+                            case R.id.bnav_gallery:
+                                selectedFragment = new OreganoGalleryFragment();
+                                break;
+                        }
+
+                        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
+                    }
+
+                    return true;
+                }
+            };
+
     @Override
     public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        BottomNavigationView bottomNav = findViewById(R.id.bottom_navigation);
+        bottomNav.setSelectedItemId(R.id.bnav_info);
+
         switch (menuItem.getItemId()) {
             case R.id.nav_cabbage:
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new CabbageFragment()).commit();
@@ -53,7 +124,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new OreganoFragment()).commit();
                 setTitle("Oregano");
                 break;
-
         }
 
         drawer.closeDrawer(GravityCompat.START);

@@ -7,7 +7,7 @@
         android:title="Info" />
 
     <item
-        android:id="@+id/bnav_steps"
+        android:id="@+id/bnav_howto"
         android:icon="@drawable/ic_steps"
         android:title="HowTo" />
 
