@@ -40,5 +40,40 @@
         \n<li>Cabbage can be stored in the refrigerator for no more than two weeks, wrapped lightly in plastic. Make sure it is dry before storing. In proper root cellar conditions, cabbage will keep for up to 3 months.</li>
     </string>
 
+    <string name="planting_blueberries">
+        <b><big>PLANTING</big></b>\n
+        \n<li>Select a sunny, sheltered spot. While blueberries are tolerant of shade, better crops are obtained in the sun.</li>
+        \n<li>Blueberries thrive in soil that is acidic. The soil pH should ideally be between 4 and 5. Soil can be acidified by mixing a small amount of granulated sulfur into the soil several months before planting. Peat moss, as well as pine bark or needles, are also good additions that will help acidify your soil.</li>
+        \n<li>The blueberry is a shallow-rooted plant. Therefore, it requires a soil that holds moisture, but also drains well and doesn’t stay wet.</li>
+        \n<li>Mix organic matter into the soil before you set your blueberry bushes.</li>
+        \n<li>Bushes should be planted as early in the spring as possible. If available, 1- to 3-year-old plants are a good choice. Be sure to go to a reputable nursery. </li>
+        \n<li>Dig holes about 20 inches deep and 18 inches wide (about twice as wide and twice as deep as the roots of the plant).</li>
+        \n<li>Space bushes about 5 feet apart in a row, with at least 8 feet between rows. Prepare a planting mixture of 2 parts loam and one part oak leaf mold, peat moss, aged sawdust, or compost, and place a layer of this mixture in the bottom of the hole.</li>
+        \n<li>Set the bush in the hole with its roots spread out. Don’t plant the bush any deeper than it grew in the pot. Pack the hole tightly with soil.</li>
+        \n<li>Apply fertilizer one month after planting, not at the time of planting. Apply ½ ounce of a 10-10-10 fertilizer in a band around the plant 6 to 12 inches from the crown.</li>
+    </string>
+    <string name="care_blueberries">
+        <b><big>CARE</big></b>\n
+        \n<li>Mulch to keep shallow blueberry root systems moist, which is essential. Apply a 2- to 4-inch layer of woodchips, saw dust, or pine needles around the bush after planting.</li>
+        \n<li>Blueberries need 1 to 2 inches of water per week.</li>
+        \n<li>Drape netting over ripening blueberries, so that the birds won’t make away with the entire crop.</li>
+        \n<li>One year after planting, apply 1 ounce of 10-10-10 fertilizer per bush in the spring at blooming time, and increase the rate by 1 ounce each year thereafter to a maximum of 8 ounces for mature bushes.</li>
+        \n<li>Do not allow the bush to produce fruit for the first year or two after planting.</li>
+        \n<li>Pinch back any blossoms developing on newly set plants to allow the energy to go to growth.</li>
+    </string>
+    <string name="pests_blueberries">
+        <b><big>PESTS/DISEASES</big></b>\n
+        \n<li>Birds</li>
+        \n<li>Blueberry Maggot</li>
+        \n<li>Powdery Mildew</li>
+    </string>
+    <string name="harvest_blueberries">
+        <b><big>HARVEST/STORAGE</big></b>\n
+        \n<li>Blueberries will be ready for picking in late July to mid August.</li>
+        \n<li>Don’t rush to pick the berries as soon as they turn blue. Wait a couple days. When they are ready, they should fall off right into your hand.</li>
+        \n<li>If you plant 2-year-old blueberry bushes, they should start to bear within a year or two. (Pick off any flowers that form the first year or two after planting, to allow the bush to become established.) Be aware that full production is reached after about 6 years.</li>
+        \n<li>Blueberries are one of the easiest fruits to freeze.</li>
+    </string>
+
 
 </resources>
