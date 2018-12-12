@@ -27,8 +27,8 @@
         <menu>
             <group android:checkableBehavior="single">
                 <item
-                    android:id="@+id/nav_oregano"
-                    android:title="Oregano" />
+                    android:id="@+id/nav_mint"
+                    android:title="Mint" />
             </group>
         </menu>
     </item>

@@ -83,19 +83,19 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                         }
 
                         getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, selectedFragment).commit();
-                    } else if (getTitle() == "Oregano") {
+                    } else if (getTitle() == "Mint") {
                         switch (item.getItemId()) {
                             case R.id.bnav_info:
-                                selectedFragment = new OreganoFragment();
+                                selectedFragment = new MintFragment();
                                 break;
                             case R.id.bnav_howto:
-                                selectedFragment = new OreganoHowToFragment();
+                                selectedFragment = new MintHowToFragment();
                                 break;
                             case R.id.bnav_tips:
-                                selectedFragment = new OreganoTipsFragment();
+                                selectedFragment = new MintTipsFragment();
                                 break;
                             case R.id.bnav_gallery:
-                                selectedFragment = new OreganoGalleryFragment();
+                                selectedFragment = new MintGalleryFragment();
                                 break;
                         }
 
@@ -120,9 +120,9 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new BlueberriesFragment()).commit();
                 setTitle("Blueberries");
                 break;
-            case R.id.nav_oregano:
-                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new OreganoFragment()).commit();
-                setTitle("Oregano");
+            case R.id.nav_mint:
+                getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container, new MintFragment()).commit();
+                setTitle("Mint");
                 break;
         }
 
