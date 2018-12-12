@@ -8,7 +8,7 @@
 
     <item
         android:id="@+id/bnav_howto"
-        android:icon="@drawable/ic_steps"
+        android:icon="@drawable/ic_howto"
         android:title="HowTo" />
 
     <item

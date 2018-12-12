@@ -1,6 +1,44 @@
 <resources>
-    <string name="app_name">FinalsProject_DELACRUZ_HAN</string>
+    <string name="app_name">Garden Encyclopedia</string>
 
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_closed">Closed navigation drawer</string>
+
+    <string name="planting_cabbage">
+        <b><big>PLANTING</big></b>\n
+        \n<li>Start cabbage seeds indoors 6 to 8 weeks before the last spring frost.</li>
+        \n<li>Harden off plants over the course of a week. To prepare soil, till in aged manure or compost.</li>
+        \n<li>Transplant outdoors 2 to 3 weeks before the last expected frost date. Choose a cloudy afternoon.</li>
+        \n<li>Plant 12 to 24 inches apart in rows, depending on size of head desired. The closer you plant, the smaller the heads.</li>
+        \n<li>Mulch thickly to retain moisture and regulate soil temperature.</li>
+        \n<li>Practice crop rotation with cabbage year to year to avoid a buildup of soil borne diseases.</li>
+        \n<li>Because cabbage, broccoli, and cauliflower are closely related, and require similar nutrients, it’s best not to plant them together. They are all heavy feeders, depleting the soil faster of required nutrients; plus, they will attract the same pests and diseases. For cabbage, also avoid proximity to strawberries and tomatoes.</li>
+        \n<li>Cabbage can be grown near beans and cucumbers.</li>
+        \n<li>Check out our chart of plant companions for an expanded list of friends and foes.</li>
+    </string>
+    <string name="care_cabbage">
+        <b><big>CARE</big></b>\n
+        \n<li>When transplants reach 5 inches tall, thin to make sure they are still the desired length apart. (The plants you remove can be transplanted elsewhere in your garden.)</li>
+        \n<li>Fertilize 3 weeks after transplanting.</li>
+        \n<li>Keep soil moist with mulch and water 2 inches per week.</li>
+    </string>
+    <string name="pests_cabbage">
+        <b><big>PESTS/DISEASES</big></b>\n
+        \n<li>Imported Cabbageworms</li>
+        \n<li>Aphids</li>
+        \n<li>Cabbage Root Maggots</li>
+        \n<li>Flea Beetles</li>
+        \n<li>Cutworms</li>
+        \n<li>Splitting</li>
+    </string>
+    <string name="harvest_cabbage">
+        <b><big>HARVEST/STORAGE</big></b>\n
+        \n<li>Harvest when heads reach desired size and are firm. This will take around 70 days for most green cabbage varieties. Most early varieties will produce 1- to 3-pound heads.</li>
+        \n<li>Cut each cabbage head at its base with a sharp knife. After harvesting, bring inside or put in shade immediately.</li>
+        \n<li>To get two crops from early cabbage plants, cut the cabbage head out of the plant, leaving the outer leaves and root in the garden. The plant will send up new heads—pinch them off until only four or so smaller heads remain. When these grow to tennis-ball size, they’ll be perfect for salad.</li>
+        \n<li>After harvesting, remove the entire stem and root system from the soil to prevent disease buildup. Only compost healthy plants; destroy those with maggot infestation.</li>
+        \n<li>Cabbage can be stored in the refrigerator for no more than two weeks, wrapped lightly in plastic. Make sure it is dry before storing. In proper root cellar conditions, cabbage will keep for up to 3 months.</li>
+    </string>
+
+
 </resources>
